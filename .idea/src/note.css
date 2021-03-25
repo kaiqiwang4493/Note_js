@@ -1,0 +1,33 @@
+ul li{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    pading: 12px, 8px,12px, 40px;
+    background-color: white;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px, 16px,12px, 16px;
+}
+
+.close:hover {
+      background-color: #f44336;
+      color: white;
+}
+
+.edit {
+      position: absolute;
+      right: 50px;
+      top: 0;
+      padding: 12px 16px 12px 16px;
+}
+
+.edit:hover {
+      background-color: #f44336;
+      color: white;
+}
