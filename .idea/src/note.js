@@ -9,16 +9,15 @@ function newElement(){
     const inputValue = document.getElementById('myInput').value;
     const textNode = document.createTextNode(inputValue)
 
-    li.appendChild(textNode);
+    row.appendChild(textNode);
     if(inputValue ===''){
         alert("You must write something")
     }else{
         //list is the appended child, list is li.
-        var list =document.getElementById('myUL').appendChild(li);
+        var list =document.getElementById('myUL').appendChild(row);
         addItem(list, inputValue);
     }
     document.getElementById('myInput').value='';
-    addColorSelect(li);
 }
 
 
@@ -59,6 +58,7 @@ function addItem(row, content) {
 
     span.onclick = function (event) {
         console.log(event);
+        event.target.parentNode.style.display = 'none'
     }
 
     row.onkeyup = function (event) {
